@@ -1,0 +1,22 @@
+.link-button {
+    position: relative;
+    color: inherit;
+    text-decoration: none !important;
+    overflow: hidden;
+  }
+  
+  .link-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .link-button:hover::after {
+    transform: translateX(0);
+  }
